@@ -1,7 +1,6 @@
-// Замени свои текущие импорты на эти:
-import { FilterSideBar } from '../components/products/FilterSideBar/FilterSideBar';
-import { ProductGrid } from '../components/products/ProductGrid/ProductGrid';
-import { SearchBar } from '../components/products/SearchBar/SearchBar';
+import { FilterSideBar } from '../../components/products/FilterSidebar/FilterSideBar';
+import { ProductGrid } from '../../components/products/ProductGrid/ProductGrid';
+import { SearchBar } from '../../components/products/SearchBar/SearchBar';
 import styles from './Catalog.module.css';
 
 export const Catalog = () => {
