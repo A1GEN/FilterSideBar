@@ -1,0 +1,79 @@
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #475569;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  color: #94a3b8;
+  pointer-events: none;
+  transition: color 0.2s ease;
+}
+
+.input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  color: #0f172a;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+/* Стили при фокусе */
+.input:focus {
+  border-color: #000000;
+  background: #f8fafc;
+}
+
+/* Подсветка иконки при фокусе на инпуте */
+.wrapper:focus-within .icon {
+  color: #0f172a;
+}
+
+/* Смещение текста, если есть иконка слева */
+.withIcon {
+  padding-left: 2.75rem;
+}
+
+/* Состояние ошибки */
+.hasError {
+  border-color: #dc2626;
+}
+
+.hasError:focus {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 1px #dc2626;
+}
+
+.errorText {
+  font-size: 0.8rem;
+  color: #dc2626;
+  margin-top: 0.1rem;
+  font-weight: 500;
+}
+
+.input:disabled {
+  background: #f1f5f9;
+  color: #94a3b8;
+  cursor: not-allowed;
+}

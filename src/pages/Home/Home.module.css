@@ -1,0 +1,138 @@
+.homePage {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #ffffff;
+}
+
+/* Баннер */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(85vh - 70px);
+  background: #f8fafc;
+  align-items: center;
+}
+
+.heroContent {
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #0f172a;
+  margin: 0;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #475569;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0;
+}
+
+.heroButtons {
+  width: fit-content;
+  margin-top: 0.5rem;
+}
+
+.heroButtons a {
+  text-decoration: none;
+}
+
+.heroImageWrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Преимущества */
+.advantages {
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.advCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01);
+}
+
+.advCard h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+}
+
+.advCard p {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Раздел товаров */
+.trending {
+  max-width: 1200px;
+  margin: 0 auto 6rem auto;
+  padding: 0 2rem;
+}
+
+.sectionHeader {
+  margin-bottom: 2.5rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.25rem 0;
+}
+
+.sectionSubtitle {
+  font-size: 1rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .title { font-size: 2.75rem; }
+  .heroContent { padding: 2rem 2.5rem; }
+}
+
+@media (max-width: 768px) {
+  .hero { grid-template-columns: 1fr; }
+  .heroImageWrapper { display: none; }
+  .advantages { grid-template-columns: 1fr; gap: 1rem; margin: 3rem auto; }
+  .title { font-size: 2.25rem; }
+}

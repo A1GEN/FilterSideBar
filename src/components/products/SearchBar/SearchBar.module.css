@@ -1,0 +1,53 @@
+.searchForm {
+  width: 100%;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #f8fafc;
+  padding: 4px 4px 4px 12px; /* Отступ слева для иконки, справа место под кнопку */
+  transition: all 0.2s ease;
+}
+
+.inputContainer:focus-within {
+  border-color: #000000;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.searchIcon {
+  color: #94a3b8;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.searchInput {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 0.95rem;
+  color: #0f172a;
+  padding: 8px 0;
+}
+
+.searchBtn {
+  background: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+}
+
+.searchBtn:hover {
+  background: #1e293b;
+}

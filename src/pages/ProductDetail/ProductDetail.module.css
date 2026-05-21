@@ -1,0 +1,252 @@
+.pageWrapper {
+  padding-top: 2rem;
+  background: #ffffff;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: #64748b;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+
+.backBtn:hover {
+  color: #000;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+/* ГАЛЕРЕЯ */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mainImgWrapper {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: #f8fafc;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.mainImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 1rem;
+}
+
+.thumb {
+  width: 80px;
+  height: 100px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.activeThumb {
+  border-color: #000;
+}
+
+/* ИНФОРМАЦИЯ */
+.title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0.75rem 0;
+  line-height: 1.2;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.reviewsCount {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.currentPrice {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.oldPrice {
+  font-size: 1.25rem;
+  color: #94a3b8;
+  text-decoration: line-through;
+}
+
+.description {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #475569;
+  margin-bottom: 2rem;
+}
+
+.optionTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.sizeGrid {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.sizeChip {
+  min-width: 54px;
+  height: 48px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.activeSize {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+/* КНОПКИ */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.qtyControl {
+  display: flex;
+  align-items: center;
+  background: #f1f5f9;
+  width: fit-content;
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.qtyControl button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.qtyControl button:hover {
+  background: #e2e8f0;
+}
+
+.qtyControl span {
+  width: 40px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.mainBtns {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.wishBtn {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  border-radius: 14px;
+  cursor: pointer;
+  color: #64748b;
+  transition: all 0.2s;
+}
+
+.wishBtn:hover {
+  background: #f8fafc;
+  color: #dc2626;
+  border-color: #fecaca;
+}
+
+/* ПРЕИМУЩЕСТВА */
+.benefits {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.benefitItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

@@ -1,0 +1,281 @@
+.cartPage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 2rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Карточка товара в корзине */
+.cartItem {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 1.25rem;
+  gap: 1.5rem;
+}
+
+.imgWrapper {
+  width: 90px;
+  height: 110px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f1f5f9;
+  flex-shrink: 0;
+}
+
+.itemImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.itemInfo {
+  flex: 1;
+}
+
+.itemTitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 0.25rem 0;
+}
+
+.itemMeta {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin: 0 0 0.75rem 0;
+}
+
+.itemMeta span {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.itemPrice {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #64748b;
+}
+
+/* Кнопки количества */
+.quantityControls {
+  display: flex;
+  align-items: center;
+  background: #f1f5f9;
+  border-radius: 10px;
+  padding: 0.25rem;
+}
+
+.qtyBtn {
+  background: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #334155;
+  border-radius: 8px;
+  transition: background-color 0.15s;
+}
+
+.qtyBtn:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.qtyValue {
+  width: 36px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+/* Правый блок карточки */
+.itemRightBlock {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  min-width: 120px;
+  justify-content: flex-end;
+}
+
+.itemTotalPrice {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.deleteBtn:hover {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.continueShopping {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64748b;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  width: fit-content;
+  transition: color 0.2s;
+}
+
+.continueShopping:hover {
+  color: #000000;
+}
+
+/* Сайдбар Сводки заказа */
+.summaryCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01);
+}
+
+.summaryTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 1.5rem 0;
+}
+
+.summaryRows {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+.summaryRow span:last-child {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.deliveryNotice {
+  font-size: 0.8rem;
+  color: #b45309;
+  background: #fffbeb;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #f1f5f9;
+  margin: 0.5rem 0;
+}
+
+.totalRow {
+  font-size: 1.15rem;
+  color: #0f172a;
+}
+
+.totalRow span:first-child {
+  font-weight: 600;
+}
+
+.totalRow span:last-child {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+/* Пустая корзина */
+.emptyCart {
+  text-align: center;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.emptyIcon {
+  color: #cbd5e1;
+}
+
+.emptyCart h2 {
+  font-size: 1.5rem;
+  color: #0f172a;
+  margin: 0;
+}
+
+.emptyCart p {
+  color: #64748b;
+  margin: 0 0 1rem 0;
+}
+
+.backLinkBtn {
+  text-decoration: none;
+}
+
+/* Адаптивность */
+@media (max-width: 968px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .cartItem {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .quantityControls {
+    order: 3;
+  }
+  .itemRightBlock {
+    order: 4;
+    flex: 1;
+  }
+}

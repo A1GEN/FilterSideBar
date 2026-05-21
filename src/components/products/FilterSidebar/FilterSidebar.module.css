@@ -1,0 +1,168 @@
+.sidebar {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 1.75rem;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.01);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Шапка сайдбара */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.clearBtn {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.clearBtn:hover {
+  color: #0f172a;
+  text-decoration: underline;
+}
+
+/* Секции фильтров */
+.section {
+  margin-bottom: 2rem;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.sectionTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 1rem 0;
+}
+
+/* Категории (кнопки) */
+.categoryList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.categoryBtn {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.9rem;
+  color: #475569;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.categoryBtn:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.activeCategory {
+  background: #e0f2fe; /* Нежно-голубой цвет под стиль твоего скрина */
+  color: #0369a1;
+  font-weight: 600;
+}
+
+.activeCategory:hover {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+/* Ползунок цены */
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.priceRange {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  outline: none;
+}
+
+.priceRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #000000;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.priceRange::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+.priceLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.currentPrice {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Сетка размеров */
+.sizeGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.sizeBtn {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0f172a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sizeBtn:hover {
+  border-color: #000000;
+  background: #f8fafc;
+}
+
+.activeSize {
+  background: #000000 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+}

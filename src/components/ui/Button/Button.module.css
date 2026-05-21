@@ -1,0 +1,110 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 500;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  outline: none;
+  user-select: none;
+}
+
+.btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+/* Стилевые темы (Variants) */
+.primary {
+  background: #000000;
+  color: #ffffff;
+}
+.primary:hover:not(:disabled) {
+  background: #1e293b;
+}
+
+.secondary {
+  background: #f1f5f9;
+  color: #334155;
+  border-color: #e2e8f0;
+}
+.secondary:hover:not(:disabled) {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.outline {
+  background: transparent;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+.outline:hover:not(:disabled) {
+  background: #f8fafc;
+  border-color: #0f172a;
+}
+
+.danger {
+  background: #dc2626;
+  color: #ffffff;
+}
+.danger:hover:not(:disabled) {
+  background: #b91c1c;
+}
+
+/* Размеры (Sizes) */
+.small {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  gap: 0.4rem;
+}
+
+.medium {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  border-radius: 12px;
+  gap: 0.5rem;
+}
+
+.large {
+  padding: 1rem 2rem;
+  font-size: 1.05rem;
+  border-radius: 14px;
+  gap: 0.6rem;
+  width: 100%; /* Большие кнопки чаще всего идут на всю ширину */
+}
+
+/* Состояние Disabled */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Анимация Спиннера загрузки */
+.loading {
+  color: transparent !important; /* Прячем текст во время загрузки */
+}
+
+.spinner {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid currentColor;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: rotation 0.6s linear infinite;
+}
+
+@keyframes rotation {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.iconLeft, .iconRight {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}

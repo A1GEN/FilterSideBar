@@ -1,0 +1,181 @@
+.historyContainer {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.mainTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 2rem;
+}
+
+.ordersList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.orderCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.01);
+  transition: border-color 0.2s ease;
+}
+
+.orderCard:hover {
+  border-color: #cbd5e1;
+}
+
+.orderHeader {
+  background: #f8fafc;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.metaInfo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.orderId {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.dateWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* Стили для статусов заказов */
+.statusBadge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+}
+
+.delivering {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.delivered {
+  background: #f0fdf4;
+  color: #16a34a;
+}
+
+.canceled {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.orderBody {
+  padding: 1.5rem;
+}
+
+.productsSummary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.productRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.productName {
+  color: #334155;
+  font-weight: 500;
+}
+
+.productQty {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.orderFooter {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.totalInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.totalLabel {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.totalPrice {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.detailsBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: none;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.detailsBtn:hover {
+  background: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+}
+
+/* Пустое состояние */
+.emptyState {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #f8fafc;
+  border-radius: 20px;
+  border: 1px dashed #cbd5e1;
+}
+
+.emptyIcon {
+  color: #94a3b8;
+  margin-bottom: 1rem;
+}
+
+.emptyText {
+  color: #64748b;
+  font-size: 1rem;
+  margin: 0;
+}

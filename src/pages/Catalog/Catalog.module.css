@@ -1,0 +1,43 @@
+.catalogPage {
+  background: #ffffff;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px; /* Позволяет сайту быть широким и красивым */
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Сетка каталога */
+.layout {
+  display: grid;
+  /* Левая колонка под фильтры (280px), правая (1fr) забирает ВСЁ оставшееся пространство */
+  grid-template-columns: 280px 1fr; 
+  gap: 2.5rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.sidebarSection {
+  width: 100%;
+}
+
+.gridSection {
+  width: 100%; /* Грид товаров теперь железно растянется до правого края экрана */
+}
+
+/* Верхняя панель поиска */
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}

@@ -1,0 +1,74 @@
+.messageWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+  animation: fadeIn 0.25s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.senderName {
+  font-size: 0.75rem;
+  color: #888888;
+  margin-bottom: 0.25rem;
+  margin-left: 0.5rem;
+}
+
+.bubbleContainer {
+  display: flex;
+  width: 100%;
+}
+
+.incoming .bubbleContainer {
+  justify-content: flex-start;
+}
+
+.own .bubbleContainer {
+  justify-content: flex-end;
+}
+
+.bubble {
+  position: relative;
+  max-width: 75%;
+  padding: 0.75rem 1rem;
+  border-radius: 18px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  word-break: break-word;
+}
+
+/* Стили для входящих сообщений (Поддержка) */
+.incoming .bubble {
+  background: #f1f5f9;
+  color: #0f172a;
+  border-bottom-left-radius: 4px;
+}
+
+/* Стили для исходящих сообщений (Пользователь) */
+.own .bubble {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #ffffff;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
+
+.time {
+  font-size: 0.7rem;
+  align-self: flex-end;
+  user-select: none;
+}
+
+.incoming .time {
+  color: #64748b;
+}
+
+.own .time {
+  color: #94a3b8;
+}

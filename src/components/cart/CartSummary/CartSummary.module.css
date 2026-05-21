@@ -1,0 +1,162 @@
+.summaryContainer {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 1.5rem;
+}
+
+.promoForm {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.inputWrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.promoIcon {
+  position: absolute;
+  left: 1rem;
+  color: #94a3b8;
+}
+
+.promoInput {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 2.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.2s ease;
+  color: #334155;
+}
+
+.promoInput:focus {
+  border-color: #0f172a;
+  background: #f8fafc;
+}
+
+.promoInput:disabled {
+  background: #f1f5f9;
+  color: #94a3b8;
+  border-color: #e2e8f0;
+}
+
+.promoBtn {
+  padding: 0 1.25rem;
+  background: #0f172a;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.promoBtn:hover:not(:disabled) {
+  background: #1e293b;
+}
+
+.promoBtn:disabled {
+  background: #e2e8f0;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.priceTable {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.value {
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.discountRow {
+  color: #10b981;
+}
+
+.discountRow .value {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.freeShipping {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.divider {
+  height: 1px;
+  background: #e2e8f0;
+  margin: 0.5rem 0;
+}
+
+.totalRow {
+  align-items: center;
+}
+
+.totalLabel {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.totalValue {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.checkoutBtn {
+  width: 100%;
+  margin-top: 1.75rem;
+  padding: 1.1rem;
+  background: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.checkoutBtn:hover {
+  background: #1e293b;
+}
+
+.arrowIcon {
+  transition: transform 0.2s ease;
+}
+
+.checkoutBtn:hover .arrowIcon {
+  transform: translateX(4px);
+}
